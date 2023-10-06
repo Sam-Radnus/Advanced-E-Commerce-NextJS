@@ -1,0 +1,197 @@
+// @import url('https://db.onlinewebfonts.com/c/55d433372d270829c51e2577a78ef12d?family=Monument+Extended');
+// @import url('https://db.onlinewebfonts.com/c/a4745f4b1d04fa025c6a05d891ed0126?family=Monument+Extended+Ultrabold');
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap');
+
+
+$font-f-primary: 'Monument Extended', sans-serif;
+$font-f-secondary: 'Inter', sans-serif;
+$font-f-hero: 'Monument Extended Ultrabold', sans-serif;
+
+$font-w-400: 400;
+$font-w-700: 700;
+$font-w-900: 900;
+
+$c-primary: #000;
+$c-secondary: #fff;
+$c-var: #3d3d3d;
+$c-detail: #8c52ff;
+$c-link-primary: #3d3d3d;
+$c-link-hover: #000;
+$c-discount: rgba(243, 121, 120, 1);
+
+$back-c-primary: #fff;
+$back-c-grey: #3d3d3d;
+$back-c-detail: radial-gradient(
+  circle at 12.8% 28%,
+  rgb(206, 155, 243) 0%,
+  #8c52ff 90%
+);
+$back-c-highlight: hsla(0, 0%, 5%, 0.2);
+$back-c-error: rgba(243, 121, 120, 0.95);
+$back-c-discount: rgba(243, 121, 120, 0.95);
+
+$back-c-button-primary: #3d3d3d;
+$back-c-button-secondary: #fff;
+$back-c-button-hover: #000;
+$back-c-button-checkout: #48e471;
+$back-c-button-checkout-hover: #74eb93;
+$back-c-var-hover: hsla(0, 0%, 5%, 0.2);
+
+$border-c-button-checkout: #48e471;
+$border-c-button-checkout-hover: #74eb93;
+$border-c-var: hsla(0, 0%, 5%, 0.2);
+// $border-c-var: #3b3b3b;
+
+$border-modal: 1px solid $border-c-var;
+
+$ls-primary: 0.05rem;
+$ls-secondary: -0.05rem;
+$ls-link: 0.1rem;
+$ls-button: 0.12rem;
+
+$z-foot_nav: 57;
+$z-backdrop: 58;
+$z-modal: 59;
+$z-modal-n: 60;
+
+$box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
+  0 8px 10px -6px rgba(0, 0, 0, 0.1);
+.footer{
+    padding: 5rem 0 1rem !important;
+    
+    &.is_collection_page_b {
+      padding-bottom: 2rem !important;
+    }
+  
+    &.is_collection_page_s {
+      padding-bottom: 10rem !important;
+    }
+  
+    @media (max-width: 1024px) {
+      padding: 7.5rem 0 1rem !important;
+    }
+  
+    .container {
+      display: flex;
+      max-width: 115rem;
+      width: 90%;
+      margin: 0 auto !important;
+      padding: 0 0 1.5rem !important;
+  
+      @media (max-width: 1024px) {
+        max-width: 50rem;
+        flex-direction: column-reverse;
+        align-items: center;
+        gap: 1.5rem;
+      }
+  
+      .sitemap {
+        width: 100%;
+        display: flex;
+        gap: 2rem;
+  
+        @media (max-width: 1024px) {
+          flex-direction: column;
+        }
+  
+        .foot_nav_wrapper {
+          @media (max-width: 1024px) {
+            padding: 2rem !important;
+            border: 2px solid #3d3d3d;
+            border-radius: 1rem;
+          }
+  
+          .foot_nav_title {
+            font-family: $font-f-hero;
+            letter-spacing: $ls-button;
+            text-transform: uppercase;
+            font-size: 1.4rem;
+            margin-bottom: 0.5rem !important;
+            font-weight: 400;
+            margin-bottom: 1.5rem !important;
+          }
+           h4{
+            font-family: $font-f-primary !important;
+           }
+          .foot_nav {
+            line-height: 1.5;
+            display: flex;
+            font-family: $font-f-primary !important;
+            flex-direction: column;
+            gap: 1rem;
+  
+            a {
+              font-family: $font-f-secondary;
+              font-weight: $font-w-700;
+              letter-spacing: $ls-secondary;
+              font-size: 1.2rem;
+              display: inline-block;
+              position: relative;
+              font-size: 1.3rem;
+            }
+  
+            a::after {
+              content: '';
+              position: absolute;
+              width: 100%;
+              transform: scaleX(0);
+              height: 2px;
+              bottom: 0rem;
+              left: 0rem;
+              background-color: #000;
+              transform-origin: bottom right;
+              transition: transform 0.25s ease-out;
+            }
+  
+            a:hover::after {
+              transform: scaleX(1);
+              transform-origin: bottom left;
+            }
+          }
+        }
+      }
+  
+      .socials_wrapper {
+        max-width: 40rem;
+        
+        width: 50vw !important;
+  
+        @media (max-width: 1024px) {
+          max-width: 32rem;
+        }
+  
+        .socials {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          align-self: auto;
+          padding-top: 4rem !important;
+          font-size: 2rem;
+  
+          @media (max-width: 1024px) {
+            border-top: $border-modal;
+            padding-top: 1.5rem !important;
+          }
+       
+  
+          a {
+            color: #3d3d3d;
+            display: flex;
+            align-items: center;
+            padding: 0.5rem !important;
+            border-radius: 0.4rem;
+  
+            -moz-transition: all 0.1s ease-in;
+            -o-transition: all 0.1s ease-in;
+            -webkit-transition: all 0.1s ease-in;
+            transition: all 0.1s ease-in;
+  
+            &:hover {
+              background: $back-c-highlight;
+            }
+          }
+        }
+      }
+    }
+  }

@@ -1,0 +1,12 @@
+@font-face {
+    font-family: "Monument Extended";
+    src: url("https://db.onlinewebfonts.com/t/55d433372d270829c51e2577a78ef12d.eot");
+    src: url("https://db.onlinewebfonts.com/t/55d433372d270829c51e2577a78ef12d.eot?#iefix") format("embedded-opentype"),
+         url("https://db.onlinewebfonts.com/t/55d433372d270829c51e2577a78ef12d.woff") format("woff"),
+         url("https://db.onlinewebfonts.com/t/55d433372d270829c51e2577a78ef12d.woff2") format("woff2"),
+         url("https://db.onlinewebfonts.com/t/55d433372d270829c51e2577a78ef12d.ttf") format("truetype"),
+         url("https://db.onlinewebfonts.com/t/55d433372d270829c51e2577a78ef12d.svg#Monument Extended") format("svg");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+  }

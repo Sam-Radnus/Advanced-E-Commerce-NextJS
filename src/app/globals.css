@@ -2,26 +2,135 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+@import url('https://db.onlinewebfonts.com/c/55d433372d270829c51e2577a78ef12d?family=Monument+Extended');
+
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap');
+body{
+  font-family: "Monument Extended", sans-serif  !important;
+  padding-bottom:180px;
+  display: flex;
+  overflow-x: hidden;
+  justify-content: center !important;
+  align-items: center !important;
+}
+button{
+  transition: 0.5s;
+}
+#layout {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+html::-webkit-scrollbar {
+  width: 1rem;
+}
+
+html::-webkit-scrollbar-track {
+  background: hsl(0, 0%, 95%);
+  border-radius: 100vw;
+}
+
+html::-webkit-scrollbar-thumb {
+  background: hsl(0, 0%, 76%);
+  border-radius: 100vw;
+}
+
+html::-webkit-scrollbar-thumb:hover {
+  background: hsl(0, 0%, 66%);
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+  margin: 0 !important;
+  padding: 0 !important;
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  font-family: 'Monument Extended', sans-serif;
+  font-weight: 400;
+  color: #000;
+  font-size: 1.2rem;
+}
+
+input,
+textarea,
+select {
+  font-family: 'Monument Extended', sans-serif ;
+  font-size: 1.6rem;
+}
+
+input[type='password'] {
+  font-family: Verdana;
+  letter-spacing: 0.2rem;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+a:hover {
+  color: inherit;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-size: 1.6rem;
+}
+
+p {
+  font-size: 1.6rem;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+ul {
+  list-style: none;
+}
+
+footer {
+  margin-top: auto;
+}
+
+.fonts_license {
+  display: none;
+}
+
+.main-container {
+  max-width: 125rem;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.disabled-link {
+  pointer-events: none;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: #fff !important;
+}
+.main_container{
+  margin-top: 8% !important;
+  display: flex;
+  gap:50px;
+  flex-direction: column;
+  justify-content: center;
+  height:fit-content;
+  width:80% !important;
+
 }
